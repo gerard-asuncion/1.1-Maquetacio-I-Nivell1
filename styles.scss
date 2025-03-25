@@ -95,3 +95,63 @@ header {
         }
     }
 }
+
+.features {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: $default-margin;
+    h2 {
+        color: $title-color;
+        margin-bottom: 10px;       
+    }
+    h3 {
+        color: $title-color;
+        font-size: 120%;
+    }
+    p {
+        color: $paragraph-color;
+        margin-top: 0;
+    }
+    .features-buttons {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-bottom: 1px solid lightgrey;
+        font-size: 120%;
+        .button-div {
+                border: 1px solid lightgrey;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+            .feat-button {
+                background: none;
+                border: none;
+                height: 50px;
+                margin-bottom: 2px;
+            }
+            .red-line {
+                visibility: hidden;
+                background-color: $secondary-color;
+                margin: auto;
+                bottom: 0;
+                width: 100px;
+                height: 3px;     
+            }
+        }
+        .button-div:hover {
+            .red-line {
+                visibility: visible;
+            }
+        }
+    }
+    .tab-content {
+        margin-top: 30px;
+        [data-tab-content] {
+            display: none;
+        }
+        .active[data-tab-content] {
+            display: block;
+        }
+    }
+}
