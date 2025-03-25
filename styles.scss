@@ -223,6 +223,7 @@ header {
         flex-direction: column;
         justify-content: space-around;
         height: 1200px;
+        margin-bottom: 100px;
         .browser-download {
             display: flex;
             flex-direction: column;
@@ -244,7 +245,7 @@ header {
 
 .faqs {
     max-width: 500px;
-    margin: 50px auto;
+    margin: 0 auto;
     .text {
         margin: $default-margin;
         margin-bottom: 90px;
@@ -463,6 +464,15 @@ header {
             .browser-download {
                 width: 300px;
                 height: 400px;
+            }
+            #chrome {
+                align-self: flex-start;
+            }
+            #firefox {
+                align-self: center;
+            }
+            #opera {
+                align-self: flex-end;
             }
         }
     }  

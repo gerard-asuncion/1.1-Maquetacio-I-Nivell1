@@ -207,6 +207,7 @@ header .flex-nav .menu {
   flex-direction: column;
   justify-content: space-around;
   height: 1200px;
+  margin-bottom: 100px;
 }
 .download .browsers .browser-download {
   display: flex;
@@ -234,7 +235,7 @@ header .flex-nav .menu {
 
 .faqs {
   max-width: 500px;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 .faqs .text {
   margin: 30px;
@@ -469,6 +470,15 @@ header .flex-nav .menu {
   .download .browsers .browser-download {
     width: 300px;
     height: 400px;
+  }
+  .download .browsers #chrome {
+    align-self: flex-start;
+  }
+  .download .browsers #firefox {
+    align-self: center;
+  }
+  .download .browsers #opera {
+    align-self: flex-end;
   }
 }
 @media (min-width: 920px) {
