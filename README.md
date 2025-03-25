@@ -15,7 +15,7 @@ Aquest exercici consisteix en la maquetació d'una pàgina web, a partir d'un mo
 
 ## Instal·lació
 
-- Clona aquest repositori: 
+- Clona aquest repositori: https://github.com/gerard-asuncion/1.1-Maquetacio-I-Nivell1.git
 - Instal·la les dependències: npm install -g sass
 
 ## Execució
