@@ -201,3 +201,43 @@ header {
         }
     }
 }
+
+.download {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: $default-margin;
+    h2 {
+        color: $title-color;
+        margin-bottom: 10px;       
+    }
+    h3 {
+        color: $title-color;
+    }
+    p {
+        color: $paragraph-color;
+        margin-top: 0;
+    }
+    .browsers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 1200px;
+        .browser-download {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0px 5px 5px 5px lightgrey;
+            border-radius: 7px;
+            height: 350px;
+            .browser-image {
+                margin-top: 20px;
+            }
+            button {
+                @include buttons();
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
