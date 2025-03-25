@@ -1,3 +1,22 @@
+body {
+  font-family: helvetica;
+  margin: 0 0 0 0;
+}
 
+button {
+  font-size: 80%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+header .flex-nav .icon-hamburger {
+  display: inline;
+}
+header .flex-nav .menu {
+  display: none;
+}
 
 /*# sourceMappingURL=styles.css.map */
