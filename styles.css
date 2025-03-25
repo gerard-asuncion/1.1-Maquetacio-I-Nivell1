@@ -232,4 +232,86 @@ header .flex-nav .menu {
   margin-bottom: 30px;
 }
 
+.faqs {
+  max-width: 500px;
+  margin: 50px auto;
+}
+.faqs .text {
+  margin: 30px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+.faqs .text h2 {
+  color: #242748;
+  margin-bottom: 10px;
+}
+.faqs .text p {
+  color: #8f9095;
+  margin-top: 0;
+}
+.faqs .accordion-menu {
+  display: grid;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.faqs .accordion-menu h3 {
+  color: #242748;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+.faqs .accordion-menu p {
+  color: #8f9095;
+  font-size: 15px;
+  text-align: justify;
+}
+.faqs .accordion-menu .dropdown-box {
+  display: grid;
+  overflow: hidden;
+  border-bottom: 1px solid lightgrey;
+}
+.faqs .accordion-menu .dropdown-box .dropdown-input {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.faqs .accordion-menu .dropdown-box .dropdown-header {
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+.faqs .accordion-menu .dropdown-box .dropdown-header::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #5265E1;
+  right: 15px;
+  top: 50%;
+  clip-path: polygon(0 25%, 50% 50%, 100% 25%, 100% 50%, 50% 75%, 0 50%);
+}
+.faqs .accordion-menu .dropdown-box .dropdown-content {
+  height: 0px;
+  z-index: -5;
+}
+.faqs .accordion-menu .dropdown-box .dropdown-input:checked + label + .dropdown-content {
+  transform: translateY(0);
+  padding: 10px;
+  height: auto;
+}
+.faqs .faqs-button {
+  text-align: center;
+  margin-top: 30px;
+}
+.faqs .faqs-button button {
+  color: white;
+  background-color: #5265E1;
+  border: 0px;
+  padding: 10px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 7px 5px 0 lightgrey;
+}
+
 /*# sourceMappingURL=styles.css.map */
